@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/front_site_acolitos/static/css/main.c53a60f4.css",
-    "main.js": "/front_site_acolitos/static/js/main.283731ef.js",
+    "main.css": "/front_site_acolitos/static/css/main.ffea4caf.css",
+    "main.js": "/front_site_acolitos/static/js/main.60400e57.js",
     "static/js/453.40697d0a.chunk.js": "/front_site_acolitos/static/js/453.40697d0a.chunk.js",
     "static/media/primeicons.svg": "/front_site_acolitos/static/media/primeicons.6ed59f962963a4a73af2.svg",
     "static/media/primeicons.eot": "/front_site_acolitos/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
@@ -15,12 +15,12 @@
     "static/media/roboto-v20-latin-ext_latin-700.woff2": "/front_site_acolitos/static/media/roboto-v20-latin-ext_latin-700.1d1ef7788f0ff084b881.woff2",
     "static/media/roboto-v20-latin-ext_latin-regular.woff2": "/front_site_acolitos/static/media/roboto-v20-latin-ext_latin-regular.5cb5c8f08bb4e6cb64c3.woff2",
     "index.html": "/front_site_acolitos/index.html",
-    "main.c53a60f4.css.map": "/front_site_acolitos/static/css/main.c53a60f4.css.map",
-    "main.283731ef.js.map": "/front_site_acolitos/static/js/main.283731ef.js.map",
+    "main.ffea4caf.css.map": "/front_site_acolitos/static/css/main.ffea4caf.css.map",
+    "main.60400e57.js.map": "/front_site_acolitos/static/js/main.60400e57.js.map",
     "453.40697d0a.chunk.js.map": "/front_site_acolitos/static/js/453.40697d0a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c53a60f4.css",
-    "static/js/main.283731ef.js"
+    "static/css/main.ffea4caf.css",
+    "static/js/main.60400e57.js"
   ]
 }
