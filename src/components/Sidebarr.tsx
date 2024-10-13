@@ -26,10 +26,10 @@ export default function Sidebarr() {
                     <i className="pi pi-home"></i>
                 </Link>
                 <Link to="/register" onClick={() => setVisible(false)}>
-                    <i className="pi pi-bookmark"></i>
+                    <i className="pi pi-user-plus"></i>
                 </Link>
                 <Link to="/birthdays" onClick={() => setVisible(false)}>
-                    <i className="pi pi-users"></i>
+                    <i className="pi pi-star"></i>
                 </Link>
             </div>
         
@@ -70,14 +70,14 @@ export default function Sidebarr() {
                                                 </li>
                                                 <li>
                                                     <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/register' style={{ textDecoration: 'none' }} onClick={() => setVisible(false)}>
-                                                        <i className="pi pi-bookmark mr-2"></i>
+                                                        <i className="pi pi-user-plus mr-2"></i>
                                                         <span className="font-medium">Cadastro</span>
                                                         <Ripple />
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/birthdays' style={{ textDecoration: 'none' }} onClick={() => setVisible(false)}>
-                                                        <i className="pi pi-users mr-2"></i>
+                                                        <i className="pi pi-star mr-2"></i>
                                                         <span className="font-medium">Aniversariantes</span>
                                                         <Ripple />
                                                     </Link>
