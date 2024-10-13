@@ -5,16 +5,36 @@ import { Button } from 'primereact/button';
 import { Ripple } from 'primereact/ripple';
 import { StyleClass } from 'primereact/styleclass';
 import { Link } from 'react-router-dom';
+import '../styles/Header.css';
 
 export default function Sidebarr() {
     const [visible, setVisible] = useState<boolean>(false);
     const btnRef1 = useRef<any>(null);
 
     return (
-      <div  className="card flex justify-content-left">
-      {/* Botão para abrir a Sidebar */}
-      <Button icon="pi pi-bars" onClick={() => setVisible(true)} className="p-mr-2" />
+      <>
+        <header className="header">
+            
+        </header>
+
+        {/* Barra lateral da esquerda com ícones dos itens */}
+        <div className={`left-bar ${visible ? 'expanded' : ''}`}>
+                {/* Botão para abrir a Sidebar */}
+                <Button icon="pi pi-bars" onClick={() => setVisible(true)} className="menu-button" />
+                
+                <Link to="/" onClick={() => setVisible(false)}>
+                    <i className="pi pi-home"></i>
+                </Link>
+                <Link to="/register" onClick={() => setVisible(false)}>
+                    <i className="pi pi-bookmark"></i>
+                </Link>
+                <Link to="/birthdays" onClick={() => setVisible(false)}>
+                    <i className="pi pi-users"></i>
+                </Link>
+            </div>
+        
       
+    
         <div className="card flex justify-content-center">
             <Sidebar
                 visible={visible}
@@ -79,7 +99,7 @@ export default function Sidebarr() {
                 )}
             ></Sidebar>
         </div>
-      </div>
+      </>
     )
 }
         

@@ -1,9 +1,13 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
+.main-content {
+  margin-left: 60px; /* Largura da barra lateral */
+  margin-top: 50px; /* Espaço abaixo do cabeçalho */
+  padding: 20px; /* Espaçamento interno */
+  flex-grow: 1; /* Permite que o conteúdo principal use o espaço restante */
+}
+
+.menu-button {
+    /* position: absolute; Posicionamento absoluto */
+    top: 0; /* Distância do topo */
+    left: 0px; /* Distância da esquerda */
+    /* z-index: 1000; Para que fique acima do conteúdo da sidebar */
+}
