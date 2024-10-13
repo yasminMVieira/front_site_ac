@@ -13,7 +13,7 @@ const RegisterForm: React.FC = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users', { name, birthdate, email });
+      await axios.post('https://back-site-acolitos.onrender.com/api/users', { name, birthdate, email });
       alert('Usuário cadastrado com sucesso!');
     } catch (error) {
       alert('Erro ao cadastrar usuário');

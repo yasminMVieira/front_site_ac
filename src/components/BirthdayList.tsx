@@ -17,7 +17,7 @@ const BirthdayList: React.FC = () => {
   useEffect(() => {
     const fetchBirthdays = async () => {
       try {
-        const response = await axios.get<User[]>('http://localhost:5000/api/birthdays');
+        const response = await axios.get<User[]>('https://back-site-acolitos.onrender.com/api/birthdays');
         setBirthdays(response.data);
       } catch (error) {
         console.error('Error fetching birthdays:', error);
