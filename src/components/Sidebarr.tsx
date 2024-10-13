@@ -41,7 +41,7 @@ export default function Sidebarr() {
                                             </StyleClass>
                                             <ul className="list-none p-0 m-0 overflow-hidden">
                                                 <li>
-                                                    <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/' style={{ textDecoration: 'none' }} onClick={(e) => hide(e)}>
+                                                    <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/' style={{ textDecoration: 'none' }} onClick={() => setVisible(false)}>
                                                         <i className="pi pi-home mr-2"></i>
                                                         <span className="font-medium">Home</span>
                                                     
@@ -49,14 +49,14 @@ export default function Sidebarr() {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/register' style={{ textDecoration: 'none' }} onClick={(e) => hide(e)}>
+                                                    <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/register' style={{ textDecoration: 'none' }} onClick={() => setVisible(false)}>
                                                         <i className="pi pi-bookmark mr-2"></i>
                                                         <span className="font-medium">Cadastro</span>
                                                         <Ripple />
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/birthdays' style={{ textDecoration: 'none' }} onClick={(e) => hide(e)}>
+                                                    <Link className="p-ripple flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors w-full" to='/birthdays' style={{ textDecoration: 'none' }} onClick={() => setVisible(false)}>
                                                         <i className="pi pi-users mr-2"></i>
                                                         <span className="font-medium">Aniversariantes</span>
                                                         <Ripple />
