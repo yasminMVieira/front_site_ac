@@ -11,13 +11,21 @@ const RegisterForm: React.FC = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    // Validação dos campos obrigatórios
+    if (!name || !birthdate || !email) {
+      alert('Todos os campos são obrigatórios!');
+      return;
+    }
     try {
       await axios.post('https://back-site-acolitos.onrender.com/api/users', { name, birthdate, email });
-      alert('Usuário cadastrado com sucesso!');
+      alert('Usuário cadastrado com sucesso!');  
     } catch (error) {
       alert('Erro ao cadastrar usuário');
     }
+
   }
+
   
   return (
     <div className="flex align-items-center justify-content-center">
@@ -27,7 +35,7 @@ const RegisterForm: React.FC = () => {
             <div>
               <label htmlFor="name" className="block text-900 font-medium mb-2">Nome</label>
               <InputText id="name" type="text" placeholder="Nome Completo" className="w-full mb-3" onChange={(e) => setName(e.target.value)}/>
-
+              
               <label htmlFor="birthdate" className="block text-900 font-medium mb-2">Data de Nascimento</label>
               <Calendar id="birthdate" className="w-full mb-3" placeholder="dd/mm/yyyy" dateFormat="dd/mm/yy" onChange={(e) => setBirthdate(e.value as Date | null)} />
 
