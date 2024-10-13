@@ -20,15 +20,6 @@ const RegisterForm: React.FC = () => {
     }
   }
   
-   // Função para formatar a data como dd/mm/yyyy
-   const formatarData = (data: Nullable<Date>) => {
-    if (!data) return '';
-    const dia = data.getDate().toString().padStart(2, '0');
-    const mes = (data.getMonth() + 1).toString().padStart(2, '0');
-    const ano = data.getFullYear();
-    return `${dia}/${mes}/${ano}`;
-};
-
   return (
     <div className="flex align-items-center justify-content-center">
       <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
