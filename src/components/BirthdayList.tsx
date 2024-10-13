@@ -32,13 +32,12 @@ const BirthdayList: React.FC = () => {
   };
 
   return (
-    <div className="birthday-list-container">
+    <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
       <h2>Aniversariantes do Dia</h2>
       <DataTable value={birthdays} paginator rows={10} tableStyle={{ minWidth: '15rem' }}>
-                <Column field="name" header="Nome" />
-                <Column field="birthdate" header="Data de Nascimento" body={(rowData) => formatarData(rowData.birthdate)} />
-            </DataTable>
-            {birthdays.length === 0 && <p>Nenhum aniversariante hoje.</p>}
+        <Column field="name" header="Nome" />
+        <Column field="birthdate" header="Data de Nascimento" body={(rowData) => formatarData(rowData.birthdate)} />
+      </DataTable>
     </div>
   );
 }

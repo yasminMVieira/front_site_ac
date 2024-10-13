@@ -1,13 +1,10 @@
 .main-content {
-  margin-left: 60px; /* Largura da barra lateral */
-  margin-top: 50px; /* Espaço abaixo do cabeçalho */
-  padding: 20px; /* Espaçamento interno */
+  margin-left: 50px; /* Largura da barra lateral */
+  padding: 5px;
   flex-grow: 1; /* Permite que o conteúdo principal use o espaço restante */
 }
 
-.menu-button {
-    /* position: absolute; Posicionamento absoluto */
-    top: 0; /* Distância do topo */
-    left: 0px; /* Distância da esquerda */
-    /* z-index: 1000; Para que fique acima do conteúdo da sidebar */
+.responsive-img {
+  width: 100%; /* Faz a imagem ocupar 100% da largura do container */
+  height: auto; /* Mantém a proporção da imagem */
 }

@@ -3,7 +3,6 @@ import axios from 'axios';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { Calendar } from 'primereact/calendar';
-import { Nullable } from 'primereact/ts-helpers';
 
 const RegisterForm: React.FC = () => {
   const [name, setName] = useState('');
@@ -23,27 +22,22 @@ const RegisterForm: React.FC = () => {
   return (
     <div className="flex align-items-center justify-content-center">
       <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
-          <div className="text-center mb-5">
-              <img src={`${process.env.PUBLIC_URL}/logo_acolito.png`} alt="hyper" height={150} className="mb-3" />
-              {/* <div className="text-900 text-3xl font-medium mb-3">Cadastro</div> */}
-          </div>
+          <img src={`${process.env.PUBLIC_URL}/logo_acolito.png`} alt="hyper" className="mb-3 responsive-img" />
+          <form className="register-form" onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name" className="block text-900 font-medium mb-2">Nome</label>
+              <InputText id="name" type="text" placeholder="Nome Completo" className="w-full mb-3" onChange={(e) => setName(e.target.value)}/>
 
-    {/* <div className="register-container"> */}
-      <form className="register-form" onSubmit={handleSubmit}>
-      <div>
-            <label htmlFor="name" className="block text-900 font-medium mb-2">Nome</label>
-            <InputText id="name" type="text" placeholder="Nome Completo" className="w-full mb-3" onChange={(e) => setName(e.target.value)}/>
+              <label htmlFor="birthdate" className="block text-900 font-medium mb-2">Data de Nascimento</label>
+              <Calendar id="birthdate" className="w-full mb-3" placeholder="dd/mm/yyyy" dateFormat="dd/mm/yy" onChange={(e) => setBirthdate(e.value as Date | null)} />
 
-            <label htmlFor="birthdate" className="block text-900 font-medium mb-2">Data de Nascimento</label>
-            <Calendar id="birthdate" className="w-full mb-3" placeholder="dd/mm/yyyy" dateFormat="dd/mm/yy" onChange={(e) => setBirthdate(e.value as Date | null)} />
+              <label htmlFor="email" className="block text-900 font-medium mb-2">E-mail</label>
+              <InputText id="email" type="text" placeholder="E-mail" className="w-full mb-3" onChange={(e) => setEmail(e.target.value)} />
 
-            <label htmlFor="email" className="block text-900 font-medium mb-2">E-mail</label>
-            <InputText id="email" type="text" placeholder="E-mail" className="w-full mb-3" onChange={(e) => setEmail(e.target.value)} />
-
-            <Button label="Cadastrar" icon="pi pi-user-plus" className="w-full" type='submit' />
-        </div>
-      </form>
-    </div>
+              <Button label="Cadastrar" icon="pi pi-user-plus" className="w-full" type='submit' />
+            </div>
+          </form>
+      </div>
     </div>
   );
 }

@@ -1,19 +1,6 @@
-.birthday-list-container {
-    /* margin-left: 220px; Ajuste para compensar a sidebar */
-    padding: 50px;
-
-  }
-  
-  .birthday-list-container h2 {
-    color: #6800b9;
-  }
-  
-  .birthday-list-container ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .birthday-list-container li {
-    margin-bottom: 10px;
-  }
+ 
+h2 {
+  padding: 15px;
+  color: #6800b9;
+}
   
